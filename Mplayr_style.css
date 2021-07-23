@@ -1,0 +1,39 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root{
+    -fx-font-size: 11pt;
+    -fx-font-family: "Franklin Gothic Semi Cond";
+    -fx-font-weight: bolder;
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #3a3a3a, #A8A8A8);
+}
+
+.button{
+    -fx-pref-height: 20px;
+    -fx-pref-width: 160px;
+    -fx-background-color: 
+        linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#020b02, #3a3a3a),
+        linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),
+        linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),
+        linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);
+     -fx-text-fill: #04d9ff;
+}
+
+.label {
+    -font-size: 2em;
+}
+
+.slider {
+    /* default track color: */
+    -slider-filled-track-color: #04d9ff ;
+    -slider-track-color: -slider-filled-track-color ;
+}
+
+/* Make thumb same color as filled part of track */
+.slider .thumb {
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #04d9ff, #1F51FF);
+}
+
+.slider .track {
+    -fx-background-color: -slider-track-color;
+    -fx-pref-height: 3;
+}
